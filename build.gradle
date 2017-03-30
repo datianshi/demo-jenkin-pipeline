@@ -21,6 +21,12 @@ repositories {
 	mavenCentral()
 }
 
+task printVersion {
+	doLast {
+		print project.version
+	}
+}
+
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
